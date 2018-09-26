@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wdq.micorestore.mybaits.inteface.IUserMapperInterface">
+    
+    <select id="login" resultType="com.wdq.micorestore.bean.UserBean">
+        select * from sysuser u where u.loginname=#{arg0} and u.password=#{arg1}
+    </select>
+
+    <!--<insert id="add" parameterType="com.wdq.micorestore.bean.GoodsBean">-->
+<!--&#45;&#45;        insert goods() value-->
+    <!--</insert>-->
+    <!---->
+</mapper>

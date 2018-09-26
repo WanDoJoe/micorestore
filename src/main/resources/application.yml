@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    # 6.x版本的MySQL JDBC驱动类为com.mysql.cj.jdbc.Driver
+    # 5.X版本的MySQL JDBC驱动类为com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/microstore?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+
+mybatis:
+  configLocation: classpath:MyBatisConf.xml
+#       log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapperLocations: classpath:mapper/*Mapper.xml
+  typeAliasesPackage: com.wdq.micorestore.bean.*
+#  configuration:
